@@ -1,24 +1,45 @@
-# README
+# Rails with startbootstrap sb admin 2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Using:
 
-Things you may want to cover:
+- Ruby 2.6.4
+- Rails 6.0.0
+- Bootstrap 4
 
-* Ruby version
+## Download and Installation
 
-* System dependencies
+```sh
+git clone https://github.com/WallasFaria/rails-startbootstrap-sb-admin-2.git project_name
+```
 
-* Configuration
+```sh
+cd project_name
+```
 
-* Database creation
+```sh
+bundle install
+```
 
-* Database initialization
+```sh
+yarn
+```
 
-* How to run the test suite
+```sh
+rails db:create
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+```sh
+rails server
+```
 
-* Deployment instructions
 
-* ...
+# [About Start Bootstrap - SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/)
+
+[SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/) is an open source admin dashboard theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+
+
+## Preview
+
+[![SB Admin 2 Preview](https://startbootstrap.com/assets/img/screenshots/themes/sb-admin-2.png)](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)
+
+**[Launch Live Preview](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)**
