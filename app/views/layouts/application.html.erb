@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SbAdmin</title>
+    <title>Template</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="page-top">
+
+    <div id="wrapper">
+      <%= render  "layouts/shared/sidebar" %>
+
+      <div id="content-wrapper" class="d-flex flex-column">
+
+        <div id="content">
+          <%= render "layouts/shared/topbar" %>
+
+          <div class="container-fluid">
+            <%= yield %>
+          </div>
+        </div>
+
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Your Website 2019</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+
+    </div>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <%= render "layouts/shared/logout_modal" %>
   </body>
 </html>
