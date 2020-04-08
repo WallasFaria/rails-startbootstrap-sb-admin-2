@@ -3,7 +3,7 @@
 ## Using:
 
 - Ruby 2.6.4
-- Rails 6.0.0
+- Rails 6.0.2
 - Bootstrap 4
 
 ## Download and Installation
