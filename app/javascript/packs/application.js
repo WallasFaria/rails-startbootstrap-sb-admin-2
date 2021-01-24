@@ -3,26 +3,35 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-require("@rails/ujs").start()
-require("turbolinks").start()
-require("@rails/activestorage").start()
-require("channels")
-require("jquery")
-require('popper.js')
-require("bootstrap/dist/js/bootstrap.bundle")
-require("jquery.easing/jquery.easing")
-require('@fortawesome/fontawesome-free/js/all')
-require('imports-loader?define=>false!datatables.net')(window, $)
-require('imports-loader?define=>false!datatables.net-bs4')(window, $)
-require('./shared/sb-admin-2')
+import Rails from "@rails/ujs"
+import Turbolinks from "turbolinks"
+import * as ActiveStorage from "@rails/activestorage"
+import "channels"
+import Chartkick from "chartkick"
+import Chart from "chart.js"
+
+import "jquery"
+import 'popper.js'
+import "bootstrap/dist/js/bootstrap.bundle"
+import "jquery.easing/jquery.easing"
+import '@fortawesome/fontawesome-free/js/all'
+import datatable from 'imports-loader?define=>false!datatables.net'
+import datatableBS4 from 'imports-loader?define=>false!datatables.net-bs4'
+import './shared/sb-admin-2'
+
+Rails.start()
+Turbolinks.start()
+ActiveStorage.start()
+Chartkick.use(Chart)
+
+datatable(window, $)
+datatableBS4(window, $)
 
 // Examples
-require("chartkick")
-require("chart.js")
-
-require('./shared/demo/chart-area-demo')
-require('./shared/demo/chart-bar-demo')
-require('./shared/demo/chart-pie-demo')
+import './shared/demo/datatables-demo'
+import './shared/demo/chart-area-demo'
+import './shared/demo/chart-bar-demo'
+import './shared/demo/chart-pie-demo'
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

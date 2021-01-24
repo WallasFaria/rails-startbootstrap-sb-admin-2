@@ -2,8 +2,8 @@
 
 ## Using:
 
-- Ruby 2.6.4
-- Rails 6.0.2
+- Ruby 2.7.2
+- Rails 6.1.1
 - Bootstrap 4
 
 ## Download and Installation
@@ -40,6 +40,6 @@ rails server
 
 ## Preview
 
-[![SB Admin 2 Preview](https://startbootstrap.com/assets/img/screenshots/themes/sb-admin-2.png)](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)
+[![SB Admin 2 Preview](https://assets.startbootstrap.com/img/screenshots/themes/sb-admin-2.png)](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)
 
 **[Launch Live Preview](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)**
